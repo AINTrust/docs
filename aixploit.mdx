@@ -1,0 +1,154 @@
+---
+title: 'Aixploit'
+description: 'An open-source framework for LLM security testing and red teaming'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/aixploit-banner-light.png"
+  alt="Aixploit Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/aixploit-banner-dark.png"
+  alt="Aixploit Hero Dark"
+/>
+
+## What is Aixploit?
+
+Aixploit is an open-source framework designed to help security researchers and red teamers test and evaluate Large Language Models (LLMs) for potential vulnerabilities and security risks. Our tool provides a systematic approach to LLM security assessment, making it easier to identify and document potential exploit vectors.
+
+<Frame>
+  <img src="/images/aixploit-overview.png" alt="Aixploit Overview" />
+</Frame>
+
+## Key Features
+
+<CardGroup cols={2}>
+  <Card title="Prompt Injection Testing" icon="syringe" color="#ff6b6b">
+    Automated testing suite for various prompt injection techniques and attack vectors.
+  </Card>
+  <Card title="Model Behavior Analysis" icon="brain" color="#4ecdc4">
+    Tools to analyze and document unexpected model behaviors and potential security bypasses.
+  </Card>
+  <Card title="Security Boundary Testing" icon="shield" color="#45b7d1">
+    Framework for testing LLM security boundaries and content filtering mechanisms.
+  </Card>
+  <Card title="Reporting & Documentation" icon="file-lines" color="#96ceb4">
+    Comprehensive reporting tools for documenting findings and vulnerabilities.
+  </Card>
+</CardGroup>
+
+## Attack Types Overview
+
+<Steps>
+  <Step title="Prompt Injection">
+    <Frame>
+      <img src="/images/prompt-injection.png" alt="Prompt Injection Diagram" />
+    </Frame>
+    Test for vulnerabilities in prompt handling and processing.
+  </Step>
+  <Step title="Privacy Testing">
+    <Frame>
+      <img src="/images/privacy-testing.png" alt="Privacy Testing Workflow" />
+    </Frame>
+    Evaluate potential data leakage and privacy concerns.
+  </Step>
+  <Step title="Integrity Checks">
+    <Frame>
+      <img src="/images/integrity-checks.png" alt="Integrity Testing Process" />
+    </Frame>
+    Verify output consistency and truthfulness.
+  </Step>
+</Steps>
+
+## Getting Started
+
+### Installation
+
+<CodeGroup>
+  ```bash npm
+  pip install aixploit
+  ```
+</CodeGroup>
+
+### Quick Start Guide
+
+<AccordionGroup>
+  <Accordion title="1. Environment Setup">
+    ```bash
+    export OPENAI_KEY="sk-xxxxx"
+    export OLLAMA_URL="hxxp:"
+    export OLLAMA_API_KEY="ollama"
+    ```
+  </Accordion>
+  <Accordion title="2. Basic Implementation">
+    ```python
+    from aixploit.plugins import PromptInjection
+    from aixploit.core import run
+
+    target = ["Openai", "", "gpt-3.5-turbo"]
+    attackers = [PromptInjection("quick")]
+    
+    results = run(attackers, target, os.getenv("OPENAI_KEY"))
+    ```
+  </Accordion>
+  <Accordion title="3. View Results">
+    ```python
+    for idx, attacker in enumerate(attackers):
+        print(f"Attacker: {attacker.__class__.__name__}")
+        print(f"Success Rate: {success_rates_percentage[idx] * 100:.2f}%")
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Results Visualization
+
+<Tabs>
+  <Tab title="Success Rates">
+    <Frame>
+      <img src="/images/success-rates-chart.png" alt="Attack Success Rates" />
+    </Frame>
+  </Tab>
+  <Tab title="Token Usage">
+    <Frame>
+      <img src="/images/token-usage-chart.png" alt="Token Usage Analysis" />
+    </Frame>
+  </Tab>
+  <Tab title="Cost Analysis">
+    <Frame>
+      <img src="/images/cost-analysis-chart.png" alt="Cost Analysis" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Architecture
+
+<Frame>
+  <img src="/images/aixploit-architecture.png" alt="Aixploit Architecture" />
+</Frame>
+
+## Contributing
+
+<CardGroup cols={3}>
+  <Card title="Fork Repository" icon="code-fork">
+    Start by forking the repository
+  </Card>
+  <Card title="Make Changes" icon="code">
+    Implement your features or fixes
+  </Card>
+  <Card title="Submit PR" icon="code-pull-request">
+    Create a pull request for review
+  </Card>
+</CardGroup>
+
+## Support & Community
+
+<CardGroup cols={2}>
+  <Card title="Discord Community" icon="discord">
+    Join our Discord server for discussions and support
+  </Card>
+  <Card title="GitHub Issues" icon="github">
+    Report bugs and request features on GitHub
+  </Card>
+</CardGroup>
