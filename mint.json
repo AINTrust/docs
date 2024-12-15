@@ -57,6 +57,15 @@
       ]
     },
     {
+      "group": "Products",
+      "pages": [
+
+        "scoreguard",
+        "policypilot",
+        "aixploit"
+      ]
+    },
+    {
       "group": "Get Started",
       "pages": [
 
@@ -64,8 +73,7 @@
           "group": "Setup",
           "pages": ["quickstart"]
       },
-        "deployment",
-        "aixploit"
+        "deployment"
       ]
     },
     {
