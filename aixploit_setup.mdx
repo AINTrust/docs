@@ -1,0 +1,107 @@
+---
+title: 'Getting Started'
+description: 'An open-source framework for LLM security testing and red teaming'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/aixploit-banner-light.png"
+  alt="Aixploit Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/aixploit-banner-dark.png"
+  alt="Aixploit Hero Dark"
+/>
+
+
+## Getting Started
+
+### Installation
+
+<CodeGroup>
+  ```bash npm
+  pip install aixploit
+  ```
+</CodeGroup>
+
+### Quick Start Guide
+
+<AccordionGroup>
+  <Accordion title="1. Environment Setup">
+    ```bash
+    export OPENAI_KEY="sk-xxxxx"
+    export OLLAMA_URL="hxxp:"
+    export OLLAMA_API_KEY="ollama"
+    ```
+  </Accordion>
+  <Accordion title="2. Basic Implementation">
+    ```python
+    from aixploit.plugins import PromptInjection
+    from aixploit.core import run
+
+    target = ["Openai", "", "gpt-3.5-turbo"]
+    attackers = [PromptInjection("quick")]
+    
+    results = run(attackers, target, os.getenv("OPENAI_KEY"))
+    ```
+  </Accordion>
+  <Accordion title="3. View Results">
+    ```python
+    for idx, attacker in enumerate(attackers):
+        print(f"Attacker: {attacker.__class__.__name__}")
+        print(f"Success Rate: {success_rates_percentage[idx] * 100:.2f}%")
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Results Visualization
+
+<Tabs>
+  <Tab title="Success Rates">
+    <Frame>
+      <img src="/images/success-rates-chart.png" alt="Attack Success Rates" />
+    </Frame>
+  </Tab>
+  <Tab title="Token Usage">
+    <Frame>
+      <img src="/images/token-usage-chart.png" alt="Token Usage Analysis" />
+    </Frame>
+  </Tab>
+  <Tab title="Cost Analysis">
+    <Frame>
+      <img src="/images/cost-analysis-chart.png" alt="Cost Analysis" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Architecture
+
+<Frame>
+  <img src="/images/aixploit-architecture.png" alt="Aixploit Architecture" />
+</Frame>
+
+## Contributing
+
+<CardGroup cols={3}>
+  <Card title="Fork Repository" icon="code-fork">
+    Start by forking the repository
+  </Card>
+  <Card title="Make Changes" icon="code">
+    Implement your features or fixes
+  </Card>
+  <Card title="Submit PR" icon="code-pull-request">
+    Create a pull request for review
+  </Card>
+</CardGroup>
+
+## Support & Community
+
+<CardGroup cols={2}>
+  <Card title="Discord Community" icon="discord">
+    Join our Discord server for discussions and support
+  </Card>
+  <Card title="GitHub Issues" icon="github">
+    Report bugs and request features on GitHub
+  </Card>
+</CardGroup>
