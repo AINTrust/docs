@@ -55,20 +55,31 @@ description: 'An open-source framework for LLM security testing and red teaming'
   <Tab title="Success Rates">
   The success rates visualization shows the effectiveness of different attack vectors against the target LLM model. Higher percentages indicate more successful prompt injection attempts, helping identify potential vulnerabilities in the model's response patterns.
 
-
+    <Frame>
+      <img src="/images/success-rates-chart.png" alt="Attack Success Rates" />
+    </Frame>
   </Tab>
   <Tab title="Token Usage">
   Token usage metrics display the computational resources consumed during testing. This visualization helps track and optimize the token consumption across different attack scenarios, providing insights into the efficiency of various testing approaches.
-
+    <Frame>
+      <img src="/images/token-usage-chart.png" alt="Token Usage Analysis" />
+    </Frame>
   </Tab>
   <Tab title="Cost Analysis">
   Cost analysis provides a detailed breakdown of expenses associated with different testing strategies. This visualization helps monitor and manage testing costs across various attack vectors, enabling better budget planning and resource allocation for security assessments.
 
-
+    <Frame>
+      <img src="/images/cost-analysis-chart.png" alt="Cost Analysis" />
+    </Frame>
   </Tab>
 </Tabs>
 
 
+## Architecture
+
+<Frame>
+  <img src="/images/aixploit-architecture.png" alt="Aixploit Architecture" />
+</Frame>
 
 ## Contributing
 

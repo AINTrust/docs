@@ -86,7 +86,7 @@ AIntrust is at the forefront of AI security, providing enterprise-grade solution
   </Card>
 </CardGroup>
 
-## Why Organizations Choose AIntrust
+## Why Organizations Choose aINTrust
 
 <Steps>
   <Step title="Comprehensive Security">
@@ -109,15 +109,21 @@ AIntrust is at the forefront of AI security, providing enterprise-grade solution
   <Card 
     title="Schedule a Demo" 
     icon="calendar" 
-    href="https://AIntrust.ai/demo"
+    href="https://aintrust.ai/demo"
   >
-    See how AIntrust can secure your AI infrastructure
+    See how aINTrust can secure your AI infrastructure
   </Card>
-
+  <Card 
+    title="Join Our Community" 
+    icon="users" 
+    href="https://discord.gg/aintrust"
+  >
+    Connect with AI security professionals
+  </Card>
 </CardGroup>
 
 <Note>
-  Enterprise ready? Contact our team at [contact@AIntrust.ai](mailto:contact@aintrust.ai) for custom solutions and enterprise pricing.
+  Enterprise ready? Contact our team at [contact@aintrust.ai](mailto:contact@aintrust.ai) for custom solutions and enterprise pricing.
 </Note>
 
 ## Stay Updated
@@ -126,16 +132,22 @@ AIntrust is at the forefront of AI security, providing enterprise-grade solution
   <Card 
     title="GitHub" 
     icon="github" 
-    href="https://github.com/AIntrust-ai"
+    href="https://github.com/aINTrust-ai"
   >
     Follow our open-source projects
   </Card>
   <Card 
     title="Blog" 
     icon="newspaper" 
-    href="https://AIntrust.ai/blog"
+    href="https://aintrust.ai/blog"
   >
     Latest AI security insights
   </Card>
-
+  <Card 
+    title="Newsletter" 
+    icon="envelope" 
+    href="https://aintrust.ai/newsletter"
+  >
+    Monthly security updates
+  </Card>
 </CardGroup>
