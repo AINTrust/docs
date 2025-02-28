@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:contact@aintrust.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://platform.aintrust.ai"
   },
   "tabs": [
     {
@@ -54,7 +54,7 @@
           "group": "Aixploit",
           "pages": ["aixploit_intro", "aixploit_setup", "aixploit_tuto"]
       },
-        "safeguard",
+        "securitypilot",
         "policypilot"
    
       ]
